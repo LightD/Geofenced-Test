@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import Swinject
+
+struct Dependency {
+    fileprivate var assembler: Assembler!
+
+    static var shared: Dependency = {
+        return Dependency()
+    }()
+    
+    private init() {}
+    
+    static func initialize() {
+        Dependency.shared.assembler = Assembler([ServiceAssembly()])
+    }
+    
+    static func resolve<Service>(_ serviceType: Service.Type) -> Service? {
+        return Dependency.shared.assembler.resolver.resolve(serviceType)
+    }
+}

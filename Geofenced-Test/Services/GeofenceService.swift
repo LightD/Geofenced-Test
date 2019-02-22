@@ -26,7 +26,7 @@ final class GeofenceService: GeofenceServiceType, HasDisposeBag {
     
     var isInsideGeofence: Observable<Bool> { return isInsideGeofenceSubject.asObservable().share(replay: 1, scope: .whileConnected) }
     
-    init(locationManager: CLLocationManager, networkManager: RxWifi = RxWifi.shared) {
+    init(locationManager: CLLocationManager, networkManager: RxWifi) {
         self.locationManager = locationManager
         self.networkManager = networkManager
         self.setup()

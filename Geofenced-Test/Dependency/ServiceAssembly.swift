@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import Swinject
+import CoreLocation
+
+final class ServiceAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(GeofenceServiceType.self) { (_) in
+            return GeofenceService(locationManager: CLLocationManager(), networkManager: RxWifi.shared)
+        }
+        .inObjectScope(.container)
+    }
+}
