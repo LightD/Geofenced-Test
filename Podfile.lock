@@ -7,6 +7,9 @@ PODS:
   - RxCoreLocation/Core (1.3.2):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - RxGesture (2.1.0):
+    - RxCocoa (~> 4.4.0)
+    - RxSwift (~> 4.4.0)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
   - RxSwiftExt (3.4.0):
@@ -22,6 +25,7 @@ PODS:
 DEPENDENCIES:
   - RxCocoa
   - RxCoreLocation
+  - RxGesture
   - RxSwift
   - RxSwiftExt
   - Swinject
@@ -31,6 +35,7 @@ SPEC REPOS:
     - RxAtomic
     - RxCocoa
     - RxCoreLocation
+    - RxGesture
     - RxSwift
     - RxSwiftExt
     - Swinject
@@ -39,10 +44,11 @@ SPEC CHECKSUMS:
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxCoreLocation: 23d0f2f06fba5af57f2fa9064a5c165e75eb4c33
+  RxGesture: 7f6dfb45dbde06e618c24442d38493e3144f2c95
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: a2d7f5a6d4fc86ec3ef0257c0d38c14a8874342b
+PODFILE CHECKSUM: b230a505bc47515af9f6dac23fabb1fb60b6b29d
 
 COCOAPODS: 1.6.0

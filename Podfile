@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '11.0'
 inhibit_all_warnings!
 
 target 'Geofenced-Test' do
@@ -10,6 +10,7 @@ target 'Geofenced-Test' do
   pod 'RxSwiftExt'
   pod 'RxCocoa'
   pod 'RxCoreLocation'
+  pod 'RxGesture'
 
   pod 'Swinject'
 

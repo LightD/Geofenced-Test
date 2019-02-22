@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143DDF44221EF567008ACACB /* Depedency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF43221EF566008ACACB /* Depedency.swift */; };
+		143DDF47221F8A6D008ACACB /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF46221F8A6D008ACACB /* ServiceAssembly.swift */; };
+		143DDF49221F8A7C008ACACB /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF48221F8A7C008ACACB /* ViewModelAssembly.swift */; };
+		143DDF4C221F952F008ACACB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF4B221F952F008ACACB /* Service.swift */; };
+		143DDF4F221F95CF008ACACB /* GeofenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF4E221F95CF008ACACB /* GeofenceService.swift */; };
+		143DDF51221F9653008ACACB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143DDF50221F9653008ACACB /* CoreLocation.framework */; };
+		143DDF53221F974C008ACACB /* RxWifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF52221F974C008ACACB /* RxWifi.swift */; };
+		143DDF55221F981E008ACACB /* AssociatedObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF54221F981E008ACACB /* AssociatedObjectStore.swift */; };
+		143DDF57221F9848008ACACB /* HasDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF56221F9848008ACACB /* HasDisposeBag.swift */; };
+		143DDF5B221FA081008ACACB /* Geofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF5A221FA081008ACACB /* Geofence.swift */; };
 		14F334DC221EE02E000B506D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F334DB221EE02E000B506D /* AppDelegate.swift */; };
 		14F334DE221EE02E000B506D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F334DD221EE02E000B506D /* ViewController.swift */; };
 		14F334E1221EE02E000B506D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F334DF221EE02E000B506D /* Main.storyboard */; };
@@ -29,6 +39,17 @@
 
 /* Begin PBXFileReference section */
 		03BDA4B8336F1A7CB14C9BF7 /* Pods_Geofenced_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geofenced_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143DDF43221EF566008ACACB /* Depedency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depedency.swift; sourceTree = "<group>"; };
+		143DDF46221F8A6D008ACACB /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		143DDF48221F8A7C008ACACB /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		143DDF4B221F952F008ACACB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		143DDF4E221F95CF008ACACB /* GeofenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceService.swift; sourceTree = "<group>"; };
+		143DDF50221F9653008ACACB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		143DDF52221F974C008ACACB /* RxWifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxWifi.swift; sourceTree = "<group>"; };
+		143DDF54221F981E008ACACB /* AssociatedObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObjectStore.swift; sourceTree = "<group>"; };
+		143DDF56221F9848008ACACB /* HasDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasDisposeBag.swift; sourceTree = "<group>"; };
+		143DDF58221F9BA0008ACACB /* Geofenced-Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Geofenced-Test.entitlements"; sourceTree = "<group>"; };
+		143DDF5A221FA081008ACACB /* Geofence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geofence.swift; sourceTree = "<group>"; };
 		14F334D8221EE02E000B506D /* Geofenced-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geofenced-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F334DB221EE02E000B506D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F334DD221EE02E000B506D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143DDF51221F9653008ACACB /* CoreLocation.framework in Frameworks */,
 				8D8BF61174CC2DF6BB600ECF /* Pods_Geofenced_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +88,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143DDF45221EF575008ACACB /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				143DDF43221EF566008ACACB /* Depedency.swift */,
+				143DDF46221F8A6D008ACACB /* ServiceAssembly.swift */,
+				143DDF48221F8A7C008ACACB /* ViewModelAssembly.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		143DDF4A221F8A87008ACACB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				143DDF4B221F952F008ACACB /* Service.swift */,
+				143DDF4E221F95CF008ACACB /* GeofenceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		143DDF4D221F9589008ACACB /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				143DDF52221F974C008ACACB /* RxWifi.swift */,
+				143DDF54221F981E008ACACB /* AssociatedObjectStore.swift */,
+				143DDF56221F9848008ACACB /* HasDisposeBag.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		143DDF59221FA006008ACACB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				143DDF5A221FA081008ACACB /* Geofence.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		14F334CF221EE02E000B506D = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +148,11 @@
 		14F334DA221EE02E000B506D /* Geofenced-Test */ = {
 			isa = PBXGroup;
 			children = (
+				143DDF58221F9BA0008ACACB /* Geofenced-Test.entitlements */,
+				143DDF4D221F9589008ACACB /* Rx */,
+				143DDF45221EF575008ACACB /* Dependency */,
+				143DDF59221FA006008ACACB /* Models */,
+				143DDF4A221F8A87008ACACB /* Services */,
 				14F334DB221EE02E000B506D /* AppDelegate.swift */,
 				14F334DD221EE02E000B506D /* ViewController.swift */,
 				14F334DF221EE02E000B506D /* Main.storyboard */,
@@ -111,6 +175,7 @@
 		44C669BFBBA0A58DCE997A29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				143DDF50221F9653008ACACB /* CoreLocation.framework */,
 				724FA3525126762BDD297328 /* Pods_Geofenced_Test.framework */,
 				03BDA4B8336F1A7CB14C9BF7 /* Pods_Geofenced_TestTests.framework */,
 			);
@@ -125,7 +190,6 @@
 				833C7DAEEDD75A3BC6CF4DDF /* Pods-Geofenced-TestTests.debug.xcconfig */,
 				17BB098EE9BE9B14D601E3AA /* Pods-Geofenced-TestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,6 +246,11 @@
 				TargetAttributes = {
 					14F334D7221EE02E000B506D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 					14F334EB221EE030000B506D = {
 						CreatedOnToolsVersion = 10.1;
@@ -241,6 +310,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCoreLocation/RxCoreLocation.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
@@ -252,6 +322,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
@@ -312,8 +383,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143DDF53221F974C008ACACB /* RxWifi.swift in Sources */,
+				143DDF55221F981E008ACACB /* AssociatedObjectStore.swift in Sources */,
+				143DDF4F221F95CF008ACACB /* GeofenceService.swift in Sources */,
 				14F334DE221EE02E000B506D /* ViewController.swift in Sources */,
 				14F334DC221EE02E000B506D /* AppDelegate.swift in Sources */,
+				143DDF49221F8A7C008ACACB /* ViewModelAssembly.swift in Sources */,
+				143DDF5B221FA081008ACACB /* Geofence.swift in Sources */,
+				143DDF44221EF567008ACACB /* Depedency.swift in Sources */,
+				143DDF57221F9848008ACACB /* HasDisposeBag.swift in Sources */,
+				143DDF47221F8A6D008ACACB /* ServiceAssembly.swift in Sources */,
+				143DDF4C221F952F008ACACB /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +556,9 @@
 			baseConfigurationReference = C941972B40FAE94D3B657938 /* Pods-Geofenced-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Geofenced-Test/Geofenced-Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6663A5A8SE;
 				INFOPLIST_FILE = "Geofenced-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,7 +576,9 @@
 			baseConfigurationReference = 6891E233B7163BBC46ABC2B4 /* Pods-Geofenced-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Geofenced-Test/Geofenced-Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6663A5A8SE;
 				INFOPLIST_FILE = "Geofenced-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
