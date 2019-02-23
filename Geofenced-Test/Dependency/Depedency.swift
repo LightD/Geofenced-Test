@@ -19,7 +19,7 @@ struct Dependency {
     private init() {}
     
     static func initialize() {
-        Dependency.shared.assembler = Assembler([ServiceAssembly()])
+        Dependency.shared.assembler = Assembler([ServiceAssembly(), ViewModelAssembly()])
     }
     
     static func resolve<Service>(_ serviceType: Service.Type) -> Service? {

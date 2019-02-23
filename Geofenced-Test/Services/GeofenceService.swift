@@ -55,6 +55,19 @@ final class GeofenceService: GeofenceServiceType, HasDisposeBag {
     }
     
     private func observeData() {
+        
+        self.networkManager.rx.ssidChanged
+            .subscribe()
+            .disposed(by: self.disposeBag)
+        
+        func coordinateObservable() -> Observable<CLLocationCoordinate2D?> {
+            return Observable
+                    .merge(self.locationManager.rx.didChangeAuthorization
+                        .filter { $0.status ==  .authorizedAlways || $0.status == .authorizedWhenInUse }
+                        .flatMap { $0.manager.rx.location.map { $0?.coordinate } },
+                       self.locationManager.rx.location.map { $0?.coordinate })
+        }
+        
         // check if network is the same as geofence
         let isSameNetworkObservable = Observable
             .combineLatest(self.networkManager.rx.ssidChanged, self.lastKnownGeofenceSubject.map { $0?.networkName })
@@ -63,7 +76,7 @@ final class GeofenceService: GeofenceServiceType, HasDisposeBag {
             }
         
         let isInsideRegion = Observable
-            .combineLatest(self.locationManager.rx.location.map { $0?.coordinate }, self.lastKnownGeofenceSubject.map { $0?.circularRegion })
+            .combineLatest(coordinateObservable(), self.lastKnownGeofenceSubject.map { $0?.circularRegion })
             .map { (data: (coords: CLLocationCoordinate2D?, region: CLCircularRegion?)) -> Bool in
                 guard let region = data.region, let coords = data.coords else { return false }
                 return region.contains(coords)
