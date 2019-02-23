@@ -11,6 +11,7 @@ target 'Geofenced-Test' do
   pod 'RxCocoa'
   pod 'RxCoreLocation'
   pod 'RxGesture'
+  pod 'RxKeyboard'
 
   pod 'Swinject'
 

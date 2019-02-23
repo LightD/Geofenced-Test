@@ -17,8 +17,11 @@
 		143DDF55221F981E008ACACB /* AssociatedObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF54221F981E008ACACB /* AssociatedObjectStore.swift */; };
 		143DDF57221F9848008ACACB /* HasDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF56221F9848008ACACB /* HasDisposeBag.swift */; };
 		143DDF5B221FA081008ACACB /* Geofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143DDF5A221FA081008ACACB /* Geofence.swift */; };
+		143DDF5D22201CAE008ACACB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143DDF5C22201CAE008ACACB /* MapKit.framework */; };
+		14429C3D22201FC900619053 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14429C3C22201FC900619053 /* HomeViewModel.swift */; };
+		1448CEDF2221045A00883C1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448CEDE2221045A00883C1D /* Extensions.swift */; };
 		14F334DC221EE02E000B506D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F334DB221EE02E000B506D /* AppDelegate.swift */; };
-		14F334DE221EE02E000B506D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F334DD221EE02E000B506D /* ViewController.swift */; };
+		14F334DE221EE02E000B506D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F334DD221EE02E000B506D /* HomeViewController.swift */; };
 		14F334E1221EE02E000B506D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F334DF221EE02E000B506D /* Main.storyboard */; };
 		14F334E3221EE030000B506D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F334E2221EE030000B506D /* Assets.xcassets */; };
 		14F334E6221EE030000B506D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F334E4221EE030000B506D /* LaunchScreen.storyboard */; };
@@ -50,9 +53,12 @@
 		143DDF56221F9848008ACACB /* HasDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasDisposeBag.swift; sourceTree = "<group>"; };
 		143DDF58221F9BA0008ACACB /* Geofenced-Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Geofenced-Test.entitlements"; sourceTree = "<group>"; };
 		143DDF5A221FA081008ACACB /* Geofence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geofence.swift; sourceTree = "<group>"; };
+		143DDF5C22201CAE008ACACB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		14429C3C22201FC900619053 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1448CEDE2221045A00883C1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		14F334D8221EE02E000B506D /* Geofenced-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geofenced-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F334DB221EE02E000B506D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14F334DD221EE02E000B506D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14F334DD221EE02E000B506D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14F334E0221EE02E000B506D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F334E2221EE030000B506D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F334E5221EE030000B506D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143DDF5D22201CAE008ACACB /* MapKit.framework in Frameworks */,
 				143DDF51221F9653008ACACB /* CoreLocation.framework in Frameworks */,
 				8D8BF61174CC2DF6BB600ECF /* Pods_Geofenced_Test.framework in Frameworks */,
 			);
@@ -113,6 +120,7 @@
 				143DDF52221F974C008ACACB /* RxWifi.swift */,
 				143DDF54221F981E008ACACB /* AssociatedObjectStore.swift */,
 				143DDF56221F9848008ACACB /* HasDisposeBag.swift */,
+				1448CEDE2221045A00883C1D /* Extensions.swift */,
 			);
 			path = Rx;
 			sourceTree = "<group>";
@@ -154,7 +162,8 @@
 				143DDF59221FA006008ACACB /* Models */,
 				143DDF4A221F8A87008ACACB /* Services */,
 				14F334DB221EE02E000B506D /* AppDelegate.swift */,
-				14F334DD221EE02E000B506D /* ViewController.swift */,
+				14F334DD221EE02E000B506D /* HomeViewController.swift */,
+				14429C3C22201FC900619053 /* HomeViewModel.swift */,
 				14F334DF221EE02E000B506D /* Main.storyboard */,
 				14F334E2221EE030000B506D /* Assets.xcassets */,
 				14F334E4221EE030000B506D /* LaunchScreen.storyboard */,
@@ -175,6 +184,7 @@
 		44C669BFBBA0A58DCE997A29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				143DDF5C22201CAE008ACACB /* MapKit.framework */,
 				143DDF50221F9653008ACACB /* CoreLocation.framework */,
 				724FA3525126762BDD297328 /* Pods_Geofenced_Test.framework */,
 				03BDA4B8336F1A7CB14C9BF7 /* Pods_Geofenced_TestTests.framework */,
@@ -311,6 +321,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCoreLocation/RxCoreLocation.framework",
 				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
@@ -323,6 +334,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreLocation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
@@ -386,11 +398,13 @@
 				143DDF53221F974C008ACACB /* RxWifi.swift in Sources */,
 				143DDF55221F981E008ACACB /* AssociatedObjectStore.swift in Sources */,
 				143DDF4F221F95CF008ACACB /* GeofenceService.swift in Sources */,
-				14F334DE221EE02E000B506D /* ViewController.swift in Sources */,
+				14F334DE221EE02E000B506D /* HomeViewController.swift in Sources */,
 				14F334DC221EE02E000B506D /* AppDelegate.swift in Sources */,
 				143DDF49221F8A7C008ACACB /* ViewModelAssembly.swift in Sources */,
 				143DDF5B221FA081008ACACB /* Geofence.swift in Sources */,
+				14429C3D22201FC900619053 /* HomeViewModel.swift in Sources */,
 				143DDF44221EF567008ACACB /* Depedency.swift in Sources */,
+				1448CEDF2221045A00883C1D /* Extensions.swift in Sources */,
 				143DDF57221F9848008ACACB /* HasDisposeBag.swift in Sources */,
 				143DDF47221F8A6D008ACACB /* ServiceAssembly.swift in Sources */,
 				143DDF4C221F952F008ACACB /* Service.swift in Sources */,
@@ -564,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "slatestudios.Geofenced-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "nour.slatestudios.Geofenced-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -584,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "slatestudios.Geofenced-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "nour.slatestudios.Geofenced-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
