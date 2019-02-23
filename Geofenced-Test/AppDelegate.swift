@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var locationManager: CLLocationManager?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Dependency.initialize()
+        self.locationManager = CLLocationManager()
+        self.checkLocationEnabled()
         return true
     }
 
@@ -42,7 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func checkLocationEnabled() {
-        
+        self.locationManager?.requestAlwaysAuthorization()
+        self.locationManager?.startUpdatingLocation()
     }
 }
 
