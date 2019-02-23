@@ -21,12 +21,30 @@ struct Geofence: Codable {
         self.radius = radius
         self.networkName = networkName
     }
-    
+}
+
+extension Geofence {
     var coordinates: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: self.lat, longitude: self.long)
     }
     
     var circularRegion: CLCircularRegion {
         return CLCircularRegion(center: self.coordinates, radius: self.radius, identifier: "myOnlyGeofence")
+    }
+    
+    func update(radius: Double) -> Geofence {
+        return Geofence(lat: self.lat, long: self.long, radius: radius, networkName: self.networkName)
+    }
+    
+    func update(coords: CLLocationCoordinate2D) -> Geofence {
+        return Geofence(lat: coords.latitude, long: coords.longitude, radius: self.radius, networkName: self.networkName)
+    }
+    
+    func update(network: String?) -> Geofence {
+        return Geofence(lat: self.lat, long: self.long, radius: self.radius, networkName: network)
+    }
+    
+    static var `default`: Geofence {
+        return Geofence(lat: 3.1466, long: 101.6958, radius: 1000)
     }
 }
